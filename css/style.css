@@ -123,13 +123,19 @@ body {
     margin: 0 auto;
 	  position: relative;
 }
+.logo h2 {
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
 .center {
   margin: 0 auto;
   text-align: center;
 }
 h1 {
   font-weight: 800;
-  font-size: 3.75vw;
+  font-size: 3.4vw;
   text-transform: uppercase;
   line-height: 120%;
   position: relative;
@@ -163,7 +169,7 @@ header {
 .navigation_header {
   height: 57.8vh;
   width: 100%;
-  background: url(../img/adult-automotive-blur-car-138611.png);
+  background: url(../img/sunflower.jpg);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -173,7 +179,7 @@ header {
   width: 38.5vw;
   height: 100%;
   padding: 3vh 0 2vh 4.6vw;
-  background-image: url(../img/Rectangle\ 55.png);
+  background: rgba(47, 80, 112, .5);
 }
 .navigation_left .rectangl {
   height: 5.5vh;
@@ -208,7 +214,7 @@ opacity: 0.43;
 .navigation_right {
   width: 18.2vw;
   height: 100%;
-  background-image: url(../img/Rectangle\ 57.png);
+  background: rgba(47, 80, 112, .5);
 }
 .navigation_right li {
   list-style: none;
@@ -223,21 +229,23 @@ opacity: 0.43;
   height: 100%;
 }
 #work {
-  height: 53.55vh;
   margin-bottom: 7.55vh
 }
 .section_left {
-  /* background-image: url(../img/Untitled-11\ 1.png), url(../img/Rectangle\ 59.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
-  width: 38.54vw;
-  height: 100%;
   position: relative;
   overflow: hidden;
+  align-self: center;
 }
-#work .border {
+.section_left img {
   width: 38.54vw;
+  
+}
+.section_left .border {
+  width: 100%;
   height: 100%;
+  border: 20px solid rgba(47, 80, 112, 1.5);
+  opacity: 0.6;
+  position: absolute;
 }
 .section_right {
   width: 36.45vw;
@@ -245,9 +253,7 @@ opacity: 0.43;
 }
 .section_right h2 {
   color: #1C1C1C;
-  margin-top: -1.55vh;
   margin-bottom: 4vh;
-  margin-left: 3vw;
 }
 .section_right .rectangl, #taxi_purchase .rectangl, #gift .rectangl, 
 #rent_previously .rectangl, #rent_previously .rectangl, 
@@ -271,26 +277,23 @@ opacity: 0.43;
   background-size:  1.9vh;
   height: 2.44vh;
 }
-.section_right li:nth-child(5) {
-  height: 4.88vh;
-  background-position: 0% 25%;
-}
 #taxi_purchase {
-  height: 107.77vh;
-  background: #034266;
+  background: rgba(47, 80, 112);
   margin-bottom: 6.66vh;
+  padding: 40px 0 30px 0;
 }
 #taxi_purchase h2 {
   color: #FFFFFF;
+  width: 100%;
+  margin-bottom: 40px;
 }
 .wraper {
   width: 69.16vw;
-  height: 100%;
   margin: 0 auto;
-  margin-top: 5vh;
 }
 .wraper .block {
   width: 20.07vw;
+  margin-bottom: 30px;
 }
 .wraper .block img {
   margin-bottom: 3.77vh;
@@ -311,6 +314,7 @@ opacity: 0.43;
   background: #1EB681;
   width: 20vw;
   height: 0.11vh;
+  margin-bottom: 30px;
 }
 #gift {
   height: 28.88vh;
@@ -347,7 +351,7 @@ opacity: 0.43;
   z-index: 1;
   margin-right: 3vw;
 }
-.border {
+#rent_previously .border {
   height: 83vh;
   width: 100%;
   position: absolute;
@@ -551,7 +555,7 @@ opacity: 0.43;
   color: #000000;
 }
 .logo img {
-  height: 6.3vh;
+  height: 9.3vh;
 }
 .phone a {
   cursor: pointer;
