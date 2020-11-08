@@ -161,7 +161,7 @@ header {
   margin-bottom: 7.55vh !important;
 }
 .top_header {
-  height: 10vh;
+  height: 13vh;
 }
 .menu {
   display: none;
@@ -174,12 +174,15 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 .navigation_left {
-  width: 38.5vw;
+  width: 400px;
   height: 100%;
   padding: 3vh 0 2vh 4.6vw;
   background: rgba(47, 80, 112, .5);
+  /* position: absolute;
+  left: -400px; */
 }
 .navigation_left .rectangl {
   height: 5.5vh;
@@ -190,10 +193,13 @@ header {
 .navigation_left .small, #gift .small {
 font-family: Source Sans Pro;
 font-style: normal;
-font-weight: 300;
+font-weight: 700;
 font-size: 0.9vw;
 line-height: 134.7%;
 opacity: 0.43;
+}
+.navigation_left .small {
+  color: #CBCBCB;
 }
 .navigation_left form {
   margin-bottom: 1vh;
@@ -212,9 +218,11 @@ opacity: 0.43;
   height: 5.55vh;
 }
 .navigation_right {
-  width: 18.2vw;
+  width: 200px;
   height: 100%;
   background: rgba(47, 80, 112, .5);
+  /* position: absolute;
+  right: -200px; */
 }
 .navigation_right li {
   list-style: none;
@@ -222,8 +230,12 @@ opacity: 0.43;
 .navigation_right a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 1.32vw;
+  font-size: 14px;
   padding-right: 2.22vw;
+  transition: font-size .7s ;
+}
+.navigation_right a:hover {
+  font-size: 16px;
 }
 .navigation_right nav {
   height: 100%;
@@ -317,21 +329,31 @@ opacity: 0.43;
   margin-bottom: 30px;
 }
 #gift {
-  height: 28.88vh;
-  background: url(../img/Rectangle\ 61.png), url(../img/image\ 18.png);
+  padding: 40px;
+  background: url(../img/shutterstock_249028891.jpg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.32vw;
   margin-bottom: 7.5vh;
 }
+#gift .wraper {
+  margin-bottom: 100px;
+}
 #gift .right {
   margin-top: 3vh;
+}
+#gift .left h2 {
+  text-transform: uppercase;
 }
 #gift input {
   width: 22.7vw;
 }
 #gift form {
   margin-bottom: 1vh;
+}
+#gift .small {
+  color: #000000;
+  font-weight: 700;
 }
 #rent_previously {
   /* height: 95.33; */
