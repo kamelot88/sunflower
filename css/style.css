@@ -128,6 +128,7 @@ body {
   line-height: 120%;
   text-transform: uppercase;
   letter-spacing: 8px;
+  line-height: 100%;
 }
 .center {
   margin: 0 auto;
@@ -177,12 +178,13 @@ header {
   overflow: hidden;
 }
 .navigation_left {
-  width: 400px;
+  width: 48%;
   height: 100%;
-  padding: 3vh 0 2vh 4.6vw;
+  padding: 3vh 4.6vw 2vh 4.6vw;
   background: rgba(47, 80, 112, .5);
-  /* position: absolute;
-  left: -400px; */
+  position: absolute;
+  left: -48%;
+  transition: left .9s;
 }
 .navigation_left .rectangl {
   height: 5.5vh;
@@ -218,11 +220,12 @@ opacity: 0.43;
   height: 5.55vh;
 }
 .navigation_right {
-  width: 200px;
+  width: auto;
   height: 100%;
   background: rgba(47, 80, 112, .5);
-  /* position: absolute;
-  right: -200px; */
+  position: absolute;
+  right: -30%;
+  transition: right 1s;
 }
 .navigation_right li {
   list-style: none;
@@ -230,12 +233,14 @@ opacity: 0.43;
 .navigation_right a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 1.2vw;
   padding-right: 2.22vw;
-  transition: font-size .7s ;
+  padding-left: 2.22vw;
+  transition: text-shadow .4s ;
 }
 .navigation_right a:hover {
-  font-size: 16px;
+  text-shadow: -1px 3px 6px #c0bd12, 0 0 1em black;;
+  color: #ffdd19;
 }
 .navigation_right nav {
   height: 100%;
@@ -265,7 +270,7 @@ opacity: 0.43;
 }
 .section_right h2 {
   color: #1C1C1C;
-  margin-bottom: 4vh;
+  margin-bottom: 1vh;
 }
 .section_right .rectangl, #taxi_purchase .rectangl, #gift .rectangl, 
 #rent_previously .rectangl, #rent_previously .rectangl, 
@@ -337,7 +342,7 @@ opacity: 0.43;
   margin-bottom: 7.5vh;
   position: relative;
 }
-#gift .background {
+.background {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -503,17 +508,19 @@ opacity: 0.43;
   margin-bottom: 5.11vh;
 }
 #testimonials .slide_block {
-  height: 71.11vh;
+  height: 50vh;
+  padding: 5vh .5vw 1vh .5vw;
   width: 25vw;
+  background-color: rgba(47, 80, 112, .5);
+  border-radius: 5%;
+  position: relative;
 }
-#testimonials .border {
-  height: 100%;
-  position: absolute;
-}
-#testimonials .slide_block img {
-  width: 100%;
-  max-height: 100%;
-  position: absolute;
+.name-komentator {
+  font-weight: 700;
+  color: #d4d114;
+  z-index: 5;
+  margin-bottom: 5vh;
+  font-size: 2vw;
 }
 #testimonials h2 {
   color: #1C1C1C;
@@ -540,7 +547,7 @@ opacity: 0.43;
   text-align: center;
 }
 #career {
-  background: url(../img/Rectangle\ 87.png), url(../img/image\ 23.png);
+  background: url(../img/thumb_l_45696.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -549,9 +556,13 @@ opacity: 0.43;
   padding-left: 4.85vw;
   padding-right: 4.6vw;
   margin-bottom: 7vh;
+  position: relative;
 }
 #career h2 {
   margin-bottom: 5vh;
+}
+.steps {
+  z-index: 5;
 }
 #career .interlayer {
   width: 12.36vw;
@@ -573,17 +584,8 @@ opacity: 0.43;
   margin-bottom: 5vh;
   margin-left: 3vw;
 }
-.maps {
-  height: 48.88vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 5.55vh;
-  border: 20px solid #034266ee;
-}
-.maps iframe {
-  position: relative;
-  overflow: hidden;
+#kontakt .logo h3 {
+  line-height: 100%;
 }
 .cont {
   height: 8.66vh;
